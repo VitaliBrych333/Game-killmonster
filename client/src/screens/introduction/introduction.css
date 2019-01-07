@@ -1,0 +1,43 @@
+h1, h2 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: 900;
+	font-size: 2em;
+	line-height: 1.2;
+	color: rgb(28, 107, 114);
+	text-shadow: white 2px 2px;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+.introduction {
+	display: grid;
+	grid-row-gap: 15px;
+	margin: 0 auto;
+}
+
+.form-fields {
+	margin-top: 20px;
+	justify-content: center;
+	color: rgb(28, 107, 114);
+}
+
+.form-fields input {
+	font-size: 22px;
+	height: 35px;
+	width: 280px;
+	border-radius: 7px;
+	padding: 5px;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+.form-fields div {
+	text-align: left;
+}
+
+.win .buttonStart {
+	margin: 20px auto;
+}

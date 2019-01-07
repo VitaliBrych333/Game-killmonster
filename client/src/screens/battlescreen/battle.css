@@ -1,0 +1,167 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "YesevaOne", serif;
+	color: red;
+	height: 100%;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.base-surfase {
+	display: none;
+	background-image: url('../../components/Images/background-image.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-attachment: fixed;
+	width: 100%;
+	min-height: 100%;
+	padding: 5% 0;
+}
+
+.field {
+	display: none;
+	max-width: 1266px;
+	height: 668px;
+	display: grid;
+	grid-template-columns: 380px auto 360px;
+	grid-template-rows: repeat(3, auto);
+	background-image: url('../../components/Images/landscape.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	border: solid rgb(113, 213, 223) 4px;
+	border-radius: 20px;
+	margin: 0 auto;
+	padding: 45px 80px 50px;
+	line-height: 1.5;
+}
+
+.hero,
+.monster {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: max-content;
+	align-self: end;
+	position: relative;
+}
+
+.head,
+.weapon {
+	justify-self: center;
+}
+
+.monster div.head,
+.hero div.head {
+	position: absolute;
+	bottom: 20px;
+}
+
+.hero .head img {
+	margin-bottom: 83px;
+}
+
+.monster .head img {
+	margin-bottom: 16px;
+}
+
+.hero .body {
+	z-index: 1;
+}
+
+.weapon {
+	position: absolute;
+	right: 6%;
+	bottom: 70px;	
+}
+
+.hero .weapon {
+	margin-bottom: 111px;
+	margin-right: -83px;
+	z-index: 1;
+}
+
+.monster .weapon {
+	margin-right: 12px;
+  margin-bottom: 48px;
+}
+
+.monster {
+	transform: rotateY(180deg);
+}
+
+.aboutPlayer,
+.aboutMonster {
+	font-size: 22px;
+	z-index: 11;
+	display: grid;
+	align-content: baseline;
+}
+
+.aboutMonster {
+	justify-items: right;
+	justify-self: end;
+	text-align: right;
+}
+
+#playerLife {
+	justify-self: start;
+}
+
+#monsterLife {
+	justify-self: end;
+}
+
+img.aboutMonster,
+img.aboutPlayer {
+	width: 250px;
+	position: abcolute;
+	top: -50px;
+	justify-self: center;
+}
+
+.life {
+	height: 35px;
+	background-color: rgb(20, 238, 165);
+	border-radius: 25px;
+	border: #fff solid 2px;
+}
+
+.points {
+	font-family: "YesevaOne", serif;
+	font-weight: bold;
+	color: #fff;
+	font-size: 25px;
+	opacity: 0;
+	text-align: center;
+	align-self: center;
+	text-shadow: 2px 2px 2px #000;
+}
+
+.appear {
+	opacity: 1;
+	-moz-transition: opacity 0.8s 0.1s ease;
+	transition: opacity 0.5s 0.5s ease;
+	-webkit-transition: opacity 0.8s 0.1s ease;
+}
+
+.disappear {
+	opacity: 0;
+	-moz-transition: opacity 0.8s 0.1s ease;
+	transition: opacity 1s 1s ease;
+	-webkit-transition: opacity 0.8s 0.1s ease;
+}
+
+canvas {
+	width: 220px;
+	height: 450px;
+}

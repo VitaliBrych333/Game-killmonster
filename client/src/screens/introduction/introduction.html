@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Game of skills</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../../../dist/main.css" type="text/css">
+	<link rel="shortcut icon" href="../../components/Images/favicon.png" type="image/png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+	<section class="landing">
+		<div class="win">
+			<h1>Кто ты такой:</h1>
+			<form method="post" action="../../../dist/app.js" name="formMain" class="form-fields introduction">
+				<div>
+					<label for="firstName">Твое имя:<br /></label>
+					<input type="text" maxlength="30" id="firstName" placeholder="Имя *" required="required">
+				</div>
+				<div>
+					<label for="lastName">Твоя фамилия:<br /></label>
+					<input type="text" maxlength="30" id="lastName" placeholder="Фамилия *" required="required">
+				</div>
+				<div>
+					<label for="email">Email:<br /></label>
+					<input type="email" id="email" required="required" placeholder="Твой email *">
+				</div>
+			</form>
+			<button class="buttonStart" onclick='location.href="../../screens/battlescreen/index.html"'>Старт</button>
+		</div>
+	</section>	
+	<script src="../../../dist/app.js"></script>	
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Table of Records</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../../../dist/main.css" type="text/css">
+	<link rel="shortcut icon" href="../../components/Images/favicon.png" type="image/png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body onload="leaderBoard()">
+	<main class="landing">
+		<section class="gameOver" style="height:550px;">
+			<div class="leaderBoard">
+				<h1>Таблица рекордов:</h1>
+				<div class="leaderBoard-tabs"></div>
+				<div class="leaderBoard-results">
+					<table class="leaderBoard-results-table">
+						<tr>
+							<th class="table-name">Имя</th>
+							<th>Дата</th>
+							<th>Побежденные монстры</th>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<button class="startNewGame" onclick='location.href="../battlescreen/index.html"'>Играть</button>
+		</section>
+	</main>
+	<script>
+			function saveInDB() {
+				return {
+						getData: async function getArrayFields(field, value) {
+								async function fetchData() {
+										const res = await fetch('/score');
+										const users = await res.json();
+										return users;
+								}
+
+								const users = await fetchData();
+								const arrayDB = [];
+
+								function createDB() {
+										const length = users.length;
+										for (let i = 0; i < length; i += 1) {
+												const fieldKey = {
+														name: `${users[i].name}`,
+														lastName: `${users[i].lastName}`,
+														email: `${users[i].email}`,
+														date: new Date(`${users[i].date}`),
+														score: users[i].score,
+														tab: users[i].tab,
+												};
+												arrayDB.push(fieldKey);
+										}
+								}
+								createDB();
+								return filterByField(arrayDB, field, value);
+						},
+				};
+		}
+
+		function leaderBoard() {
+				const localDB = async () => {
+						await saveInDB().getData('tab', parseInt('0', 10)).then((res) => {
+								const sorted = sortByField(res, 'score');
+								const displayed = displayResult(sorted);
+								const resultsTableContainer = document.querySelector('.leaderBoard-results-table');
+								const resultsTable = [...resultsTableContainer.firstElementChild.children];
+								for (let i = 1; i < resultsTable.length; i += 1) {
+										resultsTable[i].remove();
+								}
+								if (displayed.length === 0) {
+										const result = createNode('p', {}, 'Будь первым!');
+										resultsTableContainer.firstElementChild.appendChild(result);
+								}
+								for (let i = 0; i < displayed.length && i < 10; i += 1) {
+										const name = displayed[i].name;
+										const date = (displayed[i].date).toLocaleDateString();
+										const score = displayed[i].score;
+										const td1 = createNode('td', {
+												className: 'table-name',
+										}, `${name}`);
+										const td2 = createNode('td', {}, `${date}`);
+										const td3 = createNode('td', {}, `${score}`);
+										const tr = createNode('tr', {}, td1, td2, td3);
+										resultsTableContainer.firstElementChild.appendChild(tr);
+								}
+						});
+				};
+				localDB();
+		}
+
+		function filterByField(arrResults, field, value) {
+				return arrResults.filter((elem) => {
+						if (elem[field] === value) {
+								return elem;
+						}
+						return elem;
+				});
+		}
+
+		function createNode(tag, props, ...children) {
+					const element = document.createElement(tag);
+
+					Object.keys(props).forEach(key => element[key] = props[key]);
+
+					children.forEach(child => {
+						if (typeof child === 'string') {
+							child = document.createTextNode(child);
+						}
+
+						element.appendChild(child);
+					});
+					return element;
+				};
+
+		function sortByField(arrResults, field) {
+				function sorted(a, b) {
+						return b[field] - a[field];
+				}
+				return arrResults.sort(sorted);
+		}
+
+		function displayResult(arrResults, number = arrResults.length) {
+				return arrResults.slice(0, number);
+		}
+
+		$(document).ready(function() {
+					$('body').keydown(function(e) {
+						if (e.which === 13) {
+							location.href = '../battlescreen/index.html';
+						};
+					});
+		});
+</script>
+</body>
+</html>

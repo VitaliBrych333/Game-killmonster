@@ -1,0 +1,124 @@
+@font-face {
+	font-family: "YesevaOne";
+	src: url('../../components/Fonts/YesevaOne-Regular_v2.otf') format('opentype'), url('../../components/Fonts/yesevaone-regular_v2-webfont.woff2') format('woff2'), url('../../components/Fonts/yesevaone-regular_v2-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "YesevaOne", serif;
+	height: 100%;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+body {
+	height: 100%;
+}
+
+.landing {
+	display: block;
+	background-image: url('../../components/Images/texture.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-attachment: fixed;
+	width: 100%;
+	min-height: 100%;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.title {
+	width: 1000px;
+	padding: 0 0;
+	margin: 0 auto;
+}
+
+.name {
+	font-size: 60px;
+}
+
+h2 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: 900;
+	line-height: 1.2;
+	color: rgb(28, 107, 114);
+	text-shadow: white 2px 2px;
+	font-size: 1.5em;
+}
+
+a {
+	text-decoration:none;
+}
+
+.info {
+	padding-top: 20px;
+	width: 800px;
+	margin: 0 auto;
+	display: grid;
+	grid: repeat(2, auto)/ repeat(3, 1fr);
+	grid-row-gap: 25px;
+	grid-column-gap: 15px;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.info img {
+	width: 300px;
+	padding: 0;
+	border-radius: 15px;
+	border: solid rgb(28, 107, 114) 2px;
+}
+
+.info p {
+	color: #fff;
+	text-align: left;
+}
+
+.buttonStart,
+.startNewGame {
+	display: block;
+	min-width: 200px;
+	padding: 0 20px;
+	height: 100px;
+	line-height: 50px;
+	font-size: 1.5em;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 1px rgba(255, 255, 255, .2), 0 -1px rgba(0, 0, 0, .8);
+	outline: none;
+	border: none;
+	border-radius: 100px;
+	background: rgb(5, 243, 37) radial-gradient(150% 100% at 50% 5px, rgba(255, 255, 255, .2), rgba(0, 0, 0, 0));
+	box-shadow: inset rgba(0, 0, 0, .6) 0 -2px 5px, inset rgba(252, 255, 255, .7) 0 2px 5px, rgba(0, 0, 0, .8) 0 2px 5px -1px;
+	color: #fff;
+	user-select: none;
+	text-transform: uppercase;
+	align-self: end;
+	justify-self: start;
+}
+
+.buttonStart:hover,
+.startNewGame:hover {
+	color: rgb(0, 59, 66);
+	cursor: pointer;
+}
+
+.buttonStart:active,
+.startNewGame:active {
+	padding-bottom: 1px;
+	box-shadow: inset rgba(0, 0, 0, 1) 0 1px 3px, inset rgba(0, 0, 0, .6) 0 -2px 5px, inset rgba(252, 255, 255, .7) 0 2px 5px, 0 1px rgba(255, 255, 255, .08);
+	color: rgb(128, 207, 214);
+}

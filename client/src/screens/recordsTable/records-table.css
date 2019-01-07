@@ -1,0 +1,87 @@
+.win, .gameOver, .nextRaund {
+	width: 1000px;
+	height: 500px;
+	background-color: #fff;
+	padding: 15px;
+	border-radius: 15px;
+	border: 14px solid rgb(28, 107, 114);
+	margin: 0 auto;
+	background-color: rgb(61, 199, 130);
+}
+
+.gameOver, .nextRaund {
+	width: 1266px;
+	height: 668px;
+	padding: 20px 100px;
+}
+
+.gameOver .winner, .nextRaund .winner {
+	font-size: 50px;
+	text-shadow: white 2px 2px;
+	text-align: center;
+	font-weight: bold;
+	color: rgb(28, 107, 114);
+	line-height: 1.5;
+}
+
+.startNewGame {
+	margin: 20px auto;
+}
+
+.leaderBoard {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.leaderBoard-tabs {
+	padding-bottom: 10px;
+}
+
+.leaderBoard-tabs a {
+	text-align: center;
+	width: 70px;
+	margin: 5px;
+	background-color: grey;
+	padding: 5px 10px;
+	border-radius: 7px;
+	color: white;
+	font-size: 16px;
+	font-weight: 900;
+	cursor: pointer;
+}
+
+.leaderBoard-tabs a:hover {
+	background-color: green;
+}
+
+.leaderBoard-results-table {
+	width: 100%;
+}
+
+table {
+	border: 0;
+	text-align: center;
+}
+
+th, td, input {
+	border: 1px solid black;
+	padding: 0 10px;
+}
+
+th {
+	text-align: center;
+}
+
+table tr:nth-child(even) {
+	background-color: #eee;
+}
+
+table tr:nth-child(odd) {
+	background-color: #fff;
+}
+
+table th {
+	background-color: black;
+	color: white;
+}
