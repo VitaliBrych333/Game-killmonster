@@ -1,0 +1,88 @@
+.task-translation {
+  max-width:1266px;
+	height:668px;
+	margin:0 auto;
+	padding:45px 80px 50px;
+  display: none;
+  background-size: cover;
+	background-repeat: no-repeat;
+  background-position: bottom center;
+	border:solid red 4px;
+	border-radius:20px;
+	z-index:20;
+  background-image: url("../../Images/fone-translation.jpg");
+} 
+
+.greeting-translation {
+  width: 800px;
+  margin: 90px auto 0;
+}
+
+.greeting-translation p {
+  text-align: center;
+  font-family: Adigiana-2, sans-serif;
+  font-size: 42px;
+  color: #D51414;
+  text-shadow: 1px 1px 2px black; 
+}
+
+.forma-translation p {
+  display: inline-block;
+}
+
+.forma-translation {
+  text-align: center;
+}
+
+.answer-translation {
+  display: inline-block;
+}
+
+.english-word-translation {
+  display: inline-block;
+  font-size: 60px;
+  font-family: Adigiana-2, sans-serif;
+  margin: 0 10px;
+  text-align: center;
+  color: blue;
+  text-shadow: 3px 4px 5px black, 0 0 1em red;
+}
+
+.input-translation {
+  width: 200px;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 5px; 
+}
+
+.button-translation {
+  background-color: #0FB5B7;
+  width: 120px;
+  height: 60px;
+  border-radius: 20px;
+  margin: 50px 500px;
+}
+
+.button-translation p {
+  text-align: center;
+  font-size: 25px;
+  color:blue;
+  font-family: Adigiana-2, sans-serif;
+}
+
+.button-translation:hover {
+  cursor: pointer;
+  background: red;
+}
+
+.grate-translation {
+  width: 385px;
+  height: 100px;
+  background-color: rgb(73, 50, 205);
+  border-radius: 10px;
+  text-align: center;
+  font-family: Adigiana-2, sans-serif;
+  font-size: 30px;
+  color: #86561E;
+  margin: 250px auto 0;
+}

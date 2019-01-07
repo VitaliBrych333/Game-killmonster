@@ -1,0 +1,102 @@
+.task {
+ 	max-width:1266px;
+	height:668px;
+	margin:0 auto;
+	padding:45px 80px 50px;
+  display: none;
+  background-image: url("../../Images/Fone-math.jpg");
+ 	background-size: cover;
+	background-repeat: no-repeat;
+  background-position: bottom center;
+	border:solid red 4px;
+	border-radius:20px;
+	z-index:20;
+}
+ 
+.greeting {
+  width: 800px;
+  margin: 120px auto 0;
+}
+
+.greeting p {
+  text-align: center;
+  font-family: Adigiana-2, sans-serif;
+  font-size: 42px;
+  color: #D51414;
+  text-shadow: 1px 1px 2px black;
+}
+
+.math {
+  width: 320px;
+  margin: 40px 0 0 300px;
+}
+
+.argument-one, .operator, .argument-two, .equally {
+  font-size: 60px;
+  font-family: Adigiana-2, sans-serif;
+  margin: 0 10px;
+}
+
+.argument-one {
+  color: yellow;
+  text-shadow: 1px 1px 2px black;
+}
+
+.operator {
+  color: red;
+  text-shadow: 1px 1px 2px black;
+}
+
+.argument-two {
+  color: blue;
+  text-shadow: 1px 1px 2px black;
+}
+
+.equally {
+  color: black;
+  text-shadow: 1px 1px 2px black;
+}
+
+.result {
+  position:relative;
+  margin: -56px 0 0 285px;
+}
+
+input {
+  width: 130px;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: #0FB5B7;
+  width: 120px;
+  height: 60px;
+  border-radius: 20px;
+  margin: 50px 500px;
+}
+
+.button p {
+  text-align: center;
+  font-size: 25px;
+  color:blue;
+  font-family: Adigiana-2, sans-serif;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: red;
+}
+
+.grate {
+  width: 385px;
+  height: 100px;
+  background-color: rgb(73, 50, 205);
+  border-radius: 10px;
+  text-align: center;
+  font-family: Adigiana-2, sans-serif;
+  font-size: 30px;
+  color: #86561E;
+  margin: 250px auto 0;
+}

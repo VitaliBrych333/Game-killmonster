@@ -1,0 +1,95 @@
+#sortable { 
+  list-style-type: none; 
+  margin: 0 0 20px 135px;
+  padding: 0;
+  width: 75%; 
+}
+
+#sortable li {
+  margin: 0 3px 3px 3px;
+  padding-left: 1.5em; 
+  font-size: 2em; 
+  height: 40px; 
+  font-family: Adigiana-2, sans-serif;
+  color: red; 
+  text-shadow: 1px 1px 2px black;
+}
+
+#sortable li span { 
+  position: absolute; 
+  margin-left: -1.3em;
+  margin-top: 16px;
+}
+
+.task-word {
+  max-width:1266px;
+	height:668px;
+	margin:0 auto;
+	padding:10px 80px 50px;
+  display: none;
+  background-size: cover;
+	background-repeat: no-repeat;
+  background-position: bottom center;
+	border:solid red 4px;
+	border-radius:20px;
+	z-index:20;
+  background-image: url("../../Images/fone-word.jpg");
+} 
+
+.greeting-word {
+  width: 800px;
+  margin: 0 auto 20px;
+}
+
+.greeting-word p {
+  text-align: center;
+  font-family: Adigiana-2, sans-serif;
+  font-size: 42px;
+  color: rgb(13, 175, 49);
+  text-shadow: 1px 1px 2px black;
+}
+
+.forma-word p {
+  display: inline-block;
+}
+
+.forma-word {
+  text-align: center;
+  margin-left: 90px;
+  width: 60%;
+  display: inline-block;
+}
+
+.button-word {
+  position: absolute;
+  display: inline-block;
+  background-color: #0FB5B7;
+  width: 120px;
+  height: 60px;
+  border-radius: 20px;
+  margin-left: 70px;
+}
+
+.button-word p {
+  text-align: center;
+  font-size: 25px;
+  color:blue;
+  font-family: Adigiana-2, sans-serif;
+}
+
+.button-word:hover {
+  cursor: pointer;
+  background: red;
+}
+
+.grate-word {
+  width: 385px;
+  height: 100px;
+  background-color: rgb(73, 50, 205);
+  border-radius: 10px;
+  text-align: center;
+  font-family: Adigiana-2, sans-serif;
+  font-size: 30px;
+  color: #86561E;
+  margin: 250px auto 0;
+}

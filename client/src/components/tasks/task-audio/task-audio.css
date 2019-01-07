@@ -1,0 +1,93 @@
+.task-audio {
+  max-width:1266px;
+	height:668px;
+	margin:0 auto;
+	padding:45px 80px 50px;
+  display: none;
+  background-size: cover;
+	background-repeat: no-repeat;
+  background-position: bottom center;
+	border:solid red 4px;
+	border-radius:20px;
+	z-index:20;
+  background-image: url("../../Images/fone-audio.jpg");
+} 
+
+.audio p {
+  background-color: red;
+  width: 160px;
+  height: 30px;
+  border-radius: 5px; 
+  text-align: center;
+  font-size: 25px;
+  color:blue;
+  font-family: Adigiana-2, sans-serif;
+}
+
+.audio p:hover {
+  cursor: pointer;
+  background: orange;
+}
+ 
+.greeting-audio {
+  width: 800px;
+  margin: 85px auto 20px;
+}
+
+.greeting-audio p {
+  text-align: center;
+  font-family: Adigiana-2, sans-serif;
+  font-size: 42px;
+  color: #D51414;
+  text-shadow: 1px 1px 2px black;
+}
+
+.forma-audio p {
+  display: inline-block;
+}
+.forma-audio {
+  text-align: center;
+}
+.answer-audio {
+  display: inline-block;
+}
+
+.input-audio {
+  margin-top: 30px;
+  width: 200px;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+.button-audio {
+  background-color: #0FB5B7;
+  width: 120px;
+  height: 60px;
+  border-radius: 20px;
+  margin: 15px 500px;
+}
+
+.button-audio p {
+  text-align: center;
+  font-size: 25px;
+  color:blue;
+  font-family: Adigiana-2, sans-serif;
+}
+
+.button-audio:hover {
+  cursor: pointer;
+  background: red;
+}
+
+.grate-audio {
+  width: 385px;
+  height: 100px;
+  background-color: rgb(73, 50, 205);
+  border-radius: 10px;
+  text-align: center;
+  font-family: Adigiana-2, sans-serif;
+  font-size: 30px;
+  color: #86561E;
+  margin: 250px auto 0;
+}

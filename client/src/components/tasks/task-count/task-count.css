@@ -1,0 +1,85 @@
+.task-count {
+  max-width:1266px;
+	height:668px;
+	margin:0 auto;
+	padding:45px 80px 50px;
+  display: none;
+ 	background-size: cover;
+	background-repeat: no-repeat;
+  background-position: bottom center;
+	border:solid red 4px;
+	border-radius:20px;
+	z-index:20;
+  background-image: url("../../Images/fone-count.jpg");
+} 
+
+.greeting-count {
+  width: 800px;
+  margin: 28px auto 20px;
+}
+
+.greeting-count p {
+  text-align: center;
+  font-family: Adigiana-2, sans-serif;
+  font-size: 42px;
+  color: rgba(238, 11, 11, 0.863);
+  text-shadow: 1px 1px 2px black;
+}
+
+.forma-count p {
+  display: inline-block;
+}
+
+.forma-count {
+  margin: 0 auto;
+  width: 700px;
+}
+
+.input-count {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 5px;
+} 
+
+.answer-count {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.picture-count div {
+  display: inline-block;
+}
+
+.button-count {
+  background-color: #0FB5B7;
+  width: 120px;
+  height: 60px;
+  border-radius: 20px;
+  margin: 20px 500px;
+}
+
+.button-count p {
+  text-align: center;
+  font-size: 25px;
+  color:blue;
+  font-family: Adigiana-2, sans-serif;
+}
+
+.button-count:hover {
+  cursor: pointer;
+  background: red;
+}
+
+.grate-count {
+  width: 385px;
+  height: 100px;
+  background-color: rgb(73, 50, 205);
+  border-radius: 10px;
+  text-align: center;
+  font-family: Adigiana-2, sans-serif;
+  font-size: 30px;
+  color: #86561E;
+  margin: 250px auto 0;
+}

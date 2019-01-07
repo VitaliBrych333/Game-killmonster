@@ -1,0 +1,91 @@
+.task-picture {
+  max-width:1266px;
+	height:668px;
+	margin:0 auto;
+	padding:45px 80px 50px;
+  display: none;
+  background-size: cover;
+	background-repeat: no-repeat;
+  background-position: bottom center;
+	border:solid red 4px;
+	border-radius:20px;
+	z-index:20;
+  background-image: url("../../Images/fone-picture.jpg");
+} 
+
+.animal-picture img {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  border: 3px solid chartreuse;
+}
+
+.greeting-picture {
+  width: 800px;
+  margin: 28px auto 20px;
+}
+
+.greeting-picture p {
+  text-align: center;
+  font-family: Adigiana-2, sans-serif;
+  font-size: 42px;
+  color: #D51414;
+  text-shadow: 1px 1px 2px black;
+}
+
+.forma-picture p {
+  display: inline-block;
+}
+
+.forma-picture {
+  text-align: center;
+}
+
+.answer-picture {
+  display: inline-block;
+}
+
+.animal-picture {
+  font-size: 60px;
+  font-family: Adigiana-2, sans-serif;
+  margin: 0 10px;
+}
+
+.input-picture {
+  width: 300px;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+.button-picture {
+  background-color: #0FB5B7;
+  width: 120px;
+  height: 60px;
+  border-radius: 20px;
+  margin: 15px 500px;
+}
+
+.button-picture p {
+  text-align: center;
+  font-size: 25px;
+  color:blue;
+  font-family: Adigiana-2, sans-serif;
+}
+
+.button-picture:hover {
+  cursor: pointer;
+  background: red;
+}
+
+.grate-picture {
+  width: 385px;
+  height: 100px;
+  background-color: rgb(73, 50, 205);
+  border-radius: 10px;
+  text-align: center;
+  font-family: Adigiana-2, sans-serif;
+  font-size: 30px;
+  color: #86561E;
+  margin: 250px auto 0;
+}

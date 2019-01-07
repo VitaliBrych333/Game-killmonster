@@ -1,0 +1,89 @@
+.task-figure {
+  max-width:1266px;
+	height:668px;
+	margin:0 auto;
+	padding:45px 80px 50px;
+  display: none;
+  background-size: cover;
+	background-repeat: no-repeat;
+  background-position: bottom center;
+	border:solid red 4px;
+	border-radius:20px;
+	z-index:20;
+  background-image: url("../../Images/fone-figure.jpg");
+} 
+
+.figure img {
+   width: 300px;
+   height: 200px;
+}
+
+.greeting-figure {
+  width: 800px;
+  margin: 28px auto 20px;
+}
+
+.greeting-figure p {
+  text-align: center;
+  font-family: Adigiana-2, sans-serif;
+  font-size: 42px;
+  color: rgb(248, 144, 9);
+  text-shadow: 1px 1px 2px black;
+}
+
+.forma-figure p {
+  display: inline-block;
+}
+
+.forma-figure {
+  text-align: center;
+}
+
+.answer-figure {
+  display: inline-block;
+}
+
+.figure {
+  font-size: 60px;
+  font-family: Adigiana-2, sans-serif;
+  margin: 0 10px;
+}
+
+.input-figure {
+  width: 100px;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+.button-figure {
+  background-color: #0FB5B7;
+  width: 120px;
+  height: 60px;
+  border-radius: 20px;
+  margin: 15px 500px;
+}
+
+.button-figure p {
+  text-align: center;
+  font-size: 25px;
+  color:blue;
+  font-family: Adigiana-2, sans-serif;
+}
+
+.button-figure:hover {
+  cursor: pointer;
+  background: red;
+}
+
+.grate-figure {
+  width: 385px;
+  height: 100px;
+  background-color: rgb(73, 50, 205);
+  border-radius: 10px;
+  text-align: center;
+  font-family: Adigiana-2, sans-serif;
+  font-size: 30px;
+  color: #86561E;
+  margin: 250px auto 0;
+}

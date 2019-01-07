@@ -1,0 +1,95 @@
+#sortable-compare { 
+  list-style-type: none; 
+  margin: 0 0 20px 135px;
+  padding: 0;
+  width: 75%; 
+}
+
+#sortable-compare li {
+  margin: 0 3px 3px 3px;
+  padding: 0.45em; 
+  padding-left: 1.5em; 
+  font-size: 2em; 
+  height: 50px; 
+  font-family: Adigiana-2, sans-serif;
+  color: rgb(243, 247, 30); 
+  text-shadow: 1px 1px 2px black;
+}
+
+#sortable-compare li span { 
+  position: absolute; 
+  margin-left: -1.3em;
+}
+
+.task-compare {
+  max-width:1266px;
+	height:668px;
+	margin:0 auto;
+	padding:45px 80px 50px;
+  display: none;
+  background-size: cover;
+	background-repeat: no-repeat;
+  background-position: bottom center;
+	border:solid red 4px;
+	border-radius:20px;
+	z-index:20;
+  background-image: url("../../Images/fone-compare.jpg");
+} 
+
+.greeting-compare {
+  width: 800px;
+  margin: 28px auto 20px;
+}
+
+.greeting-compare p {
+  text-align: center;
+  font-family: Adigiana-2, sans-serif;
+  font-size: 42px;
+  color: rgb(43, 13, 175);
+  text-shadow: 1px 1px 2px black;
+}
+
+.forma-compare p {
+  display: inline-block;
+}
+
+.forma-compare {
+  text-align: center;
+  margin-left: 90px;
+  width: 60%;
+  display: inline-block;
+}
+
+.button-compare {
+  position: absolute;
+  display: inline-block;
+  background-color: #0FB5B7;
+  width: 120px;
+  height: 60px;
+  border-radius: 20px;
+  margin-left: 70px;
+}
+
+.button-compare p {
+  text-align: center;
+  font-size: 25px;
+  color:blue;
+  font-family: Adigiana-2, sans-serif;
+}
+
+.button-compare:hover {
+  cursor: pointer;
+  background: red;
+}
+
+.grate-compare {
+  width: 385px;
+  height: 100px;
+  background-color: rgb(73, 50, 205);
+  border-radius: 10px;
+  text-align: center;
+  font-family: Adigiana-2, sans-serif;
+  font-size: 30px;
+  color: #86561E;
+  margin: 250px auto 0;
+}

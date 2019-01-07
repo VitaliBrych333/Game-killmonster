@@ -1,0 +1,82 @@
+.task-vowels {
+  max-width:1266px;
+	height:668px;
+	margin:0 auto;
+	padding:45px 80px 50px;
+  display: none;
+  background-size: cover;
+	background-repeat: no-repeat;
+  background-position: bottom center;
+	border:solid red 4px;
+	border-radius:20px;
+	z-index:20;
+  background-image: url("../../Images/fone-vowels.jpg");
+} 
+
+.greeting-vowels {
+  width: 800px;
+  margin: 28px auto 20px;
+}
+
+.greeting-vowels p {
+  text-align: center;
+  font-family: Adigiana-2, sans-serif;
+  font-size: 42px;
+  color: rgba(238, 11, 11, 0.863);
+  text-shadow: 1px 1px 2px black;
+}
+
+.forma-vowels {
+  text-align: center;
+  margin: 0 auto;
+  width: 700px;
+  font-family: Adigiana-2, sans-serif;
+  font-size: 84px;
+  color: rgb(245, 241, 12);
+  text-shadow: 1px 1px 2px black;
+}
+
+.input-vowels {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 5px;
+} 
+
+.answer-vowels {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.button-vowels {
+  background-color: #0FB5B7;
+  width: 120px;
+  height: 60px;
+  border-radius: 20px;
+  margin: 40px 500px;
+}
+
+.button-vowels p {
+  text-align: center;
+  font-size: 25px;
+  color:blue;
+  font-family: Adigiana-2, sans-serif;
+}
+
+.button-vowels:hover {
+  cursor: pointer;
+  background: red;
+}
+
+.grate-vowels {
+  width: 385px;
+  height: 100px;
+  background-color: rgb(73, 50, 205);
+  border-radius: 10px;
+  text-align: center;
+  font-family: Adigiana-2, sans-serif;
+  font-size: 30px;
+  color: #86561E;
+  margin: 250px auto 0;
+}
