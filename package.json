@@ -1,0 +1,80 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "Count and win. The Rolling scope school",
+  "scripts": {
+    "start": "node ./server/server.js",
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "Vitali Brych <epamc@mail.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^7.1.4",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "jest": "^23.6.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
+  },
+  "main": "./server/server.js",
+  "repository": {
+    "type": "git"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "cli-spinners": "^0.1.2",
+    "cli-table": "^0.3.1",
+    "cli-width": "^2.2.0",
+    "clone": "^1.0.4",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.4.0",
+    "parse-glob": "^3.0.4",
+    "parse-json": "^4.0.0",
+    "parse-passwd": "^1.0.0",
+    "pascalcase": "^0.1.1",
+    "path-browserify": "^0.0.0",
+    "path-dirname": "^1.0.2",
+    "path-exists": "^3.0.0",
+    "path-is-absolute": "^1.0.1",
+    "path-key": "^2.0.1",
+    "path-parse": "^1.0.5",
+    "path-type": "^3.0.0"
+  },
+  "engines": {
+    "node": "10.14.1",
+    "npm": "6.4.1",
+    "git": "2.19.2.windows.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|html)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/legacy_notes_and_workbook/",
+      "<rootDir>/client/src/stylesheets/"
+    ]
+  }
+}

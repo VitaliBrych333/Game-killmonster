@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+  text-decoration: none;
+}
+ 
+@font-face {
+  font-family: Adigiana-2; 
+  src: url(../Fonts/Adigiana-2.ttf); 
+}
+
+.modal-dialog {
+  padding:5px 20px;
+  position: absolute;
+  margin: -360px -300px;
+  display: none;
+  background-color: rgb(26, 103, 190);
+  width: 870px;
+  height: 480px;
+  border: 5px solid rgb(88, 88, 9);
+  border-radius: 15px;
+  font-family: Adigiana-2, sans-serif;
+  font-size: 22px;
+  z-index: 99;
+  text-align: center;
+}
+
+.modal-dialog p+p {
+  text-align: center;
+  margin: -20px 0 20px 0;
+  font-size: 25px;
+  color: rgb(255, 60, 0);
+}
+
+.close {
+  margin-left: 800px;
+	font-size: 35px;
+}
+
+.close:hover {
+  cursor: pointer;
+  color: rgb(0, 255, 234);
+  -webkit-transition: color 0.3s ease-out 0.1s;
+  -moz-transition: color 0.3s ease-out 0.1s;
+  transition: color 0.3s ease-out 0.1s;
+}
+
+.spell {
+  width: 800px;
+}
+
+.spell p {
+  display: inline;
+  margin-top: 20px;
+}
+
+.spell img {
+  margin: 10px 40px 0 50px;
+}
+
+.spell img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);  
+}
