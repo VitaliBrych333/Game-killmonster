@@ -1,0 +1,145 @@
+.monsters-container,
+.player-container {
+    height: 240px;
+    width: 220px;
+    justify-self: center;
+    z-index: 10;
+    position: relative;
+    opacity: 1;
+}
+
+.magic img {
+    position: absolute;
+    top: -120px;
+}
+
+.health {
+    display: none;
+}
+
+.magic {
+    display: none;
+    position: relative;
+}
+
+.heart {
+    font-size: 120px;
+    color: #e00;
+    animation: beat .25s infinite alternate;
+    transform-origin: center;
+    text-align: center;
+    position: relative;
+    top: -170px;
+}
+
+/* Heart beat animation */
+
+@keyframes beat {
+    to {
+        transform: scale(1.4);
+    }
+}
+
+@keyframes particleAnimation {
+    from {
+        left: -100px;
+    }
+    to {
+        left: calc( 100% + 100px);
+    }
+}
+
+/* Falling Hearts animation */
+
+.fallingHearts {
+    position: relative;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.fallingHearts i {
+    display: inline-block;
+    -webkit-animation: falling 2s 3s;
+    animation: falling 2s 3s;
+    color: red;
+    font-size: 30px;
+    background-color: transparent;
+    opacity: 0;
+}
+
+.fallingHearts i:nth-of-type(n) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.fallingHearts i:nth-of-type(2n) {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.fallingHearts i:nth-of-type(3n) {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+@-webkit-keyframes falling {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate3d(0, 440px, 0) rotate(90deg);
+        opacity: 0;
+    }
+}
+
+@keyframes falling {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate3d(0, 440px, 0) rotate(90deg);
+        opacity: 0;
+    }
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeOutDown {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+@keyframes fadeOutDown {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+.fadeOutDown {
+    -webkit-animation-name: fadeOutDown;
+    animation-name: fadeOutDown;
+}
